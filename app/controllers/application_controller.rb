@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    raise 
+    raise  'An error has occured' 
     erb :account
   end
 
