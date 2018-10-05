@@ -7,7 +7,7 @@
   </head>
   <body id="page-top">
     <% if Helpers.is_logged_in?(session) %>
-        <h2>"Welcome, <%=@user.username%>!"</h2>
+        <h2>"Welcome <%=@user.username%></h2>
         <h4> "Your account balance is <%=@user.balance%>"</h4>
         <a href="/logout">Log Out</a>
       <% else %>
