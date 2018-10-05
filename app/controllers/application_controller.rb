@@ -25,6 +25,7 @@ class ApplicationController < Sinatra::Base
     raise  'An error has occured' 
     erb :account
   end
+  end
 
   get '/logout' do
     session.clear
