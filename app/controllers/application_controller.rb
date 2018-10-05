@@ -21,6 +21,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
+    if @user.nil?
     raise  'An error has occured' 
     erb :account
   end
